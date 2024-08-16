@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src = "js.js" defer></script>
+    <link rel="icon" href="images/user_pic.png" tyep = "image/icon type">
+
+</head>
+<body>
+    <div class="main_container">
+        <div class="main_panel">
+            <div class="user_panel">
+                <h2>To Do <img src="images/notebook3.png" alt="notebook"></h2>
+                <p id = "invalid_notif">Please Enter your Name</p>
+                <div class="user_entry">
+                    <img src="images/user_pic.png" alt="user_pic" id = "user_profile">
+                    <label for="user_pic"><img src="images/camera.png" alt="camera"></label>
+                    <input type="file" accept="image/jpeg, image/jpg, image/png" id = "user_pic">
+                    <div class="input_details">
+                        <input type="text" placeholder = "enter your name" id ="user_name">
+                        <button id = "create_btn">Create <i class='bx bx-pencil'></i></button>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="create_panel">
+            <div class = "create_panel_content">
+                <div class="left">
+                    <div class="left_content">
+                        <img src="images/user_pic.png" alt="user_pic" class = "user_picture">
+                        <div class="user_details">
+                            <h2 id = "name">Donna</h2>
+                            <p class = "total_task">Tasks: 10</p>
+                        </div>
+                        <div class="left_ul_list">
+                        </div>
+                        <div class="left_delete">
+                            <i class='bx bx-trash' ></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="container_background"></div>
+                    <div class="right_header">
+                        <img src="images/arrow.png" alt="arrow" class = "back_btn">
+                        <h2>To Do <img src="images/notebook.png" alt="notebook"></h2>
+                    </div> 
+                    
+                    <div class="workspace">
+                        <div class="workspace_container">
+                            <div class="workspace_content">
+                                <!--<div class = "content_box">
+                                    <div class = "img_container">
+                                        <img src="images/personal.png" alt="personal" class = "workspace_img" id = "new_workspace_img">
+                                    </div>  
+                                        <h2 class = "workplace_title">Personal</h2>
+                                    
+                                </div> !-->
+                                <div class = "content_box add_content_box">
+                                    <img src="images/add.png" alt="personal" class = "add_workspace_img">
+                                </div>   
+                            </div> 
+                        </div> 
+                    </div>
+
+
+                    <div class = "add_category">
+                        <div class="add_category_details">
+                            <label for="category_name">Add Category</label>
+                            <input type="text" placeholder="category name" id = "category_name" maxlength = "12">
+                            <p class = "error_notif"></p>
+                            <div class = "btns">
+                                <label for="upload_image" id = "label_upload_image"><i class='bx bx-camera'></i></label>
+                                <input type="file" accept = "image/jpeg, image/jpg, image/png" id = "upload_image">
+                                <button id = 'cancel_btn'>Cancel</button>
+                                <button id = "add_btn">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_background"></div>
+
+
+                    <div class="task_panel">
+                        <i class='bx bx-x close_task_panel'></i>
+                        <div class="container">
+                            <div class="add_task_panel">
+                                <input type="text" placeholder = "what is your task for today?" class = 'add_new_task'>
+                                <button type = "button" class = "new_task_btn">Add</button>
+                            </div>
+                            <div class="task_list_container">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
